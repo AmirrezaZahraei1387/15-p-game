@@ -1,0 +1,8 @@
+//
+// Created by KAVOSH on 8/12/2023.
+//
+
+#ifndef INC_15_PUZZLE_GAME_BOARD_HPP
+#define INC_15_PUZZLE_GAME_BOARD_HPP
+
+#endif //INC_15_PUZZLE_GAME_BOARD_HPP

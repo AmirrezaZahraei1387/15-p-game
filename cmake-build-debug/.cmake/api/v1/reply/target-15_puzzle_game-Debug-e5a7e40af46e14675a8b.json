@@ -100,8 +100,7 @@
 			"sourceIndexes" : 
 			[
 				1,
-				2,
-				3
+				2
 			]
 		}
 	],
@@ -121,11 +120,6 @@
 		{
 			"backtrace" : 1,
 			"path" : "gameBoard/tile.hpp",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"path" : "gameBoard/pointindex.h",
 			"sourceGroupIndex" : 1
 		}
 	],

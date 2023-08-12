@@ -1,5 +1,8 @@
 # ninja log v5
-1	189	7135662712707942	build.ninja	566cd213f7a9c83e
+1	189	7135681587350240	build.ninja	566cd213f7a9c83e
 6	78	7135646905694007	CMakeFiles/15_puzzle_game.dir/gameBoard/board/board.cpp.obj	81a4bcac705ccad1
 3	738	7135659555236154	CMakeFiles/15_puzzle_game.dir/main.cpp.obj	d37c046bb4b64579
 738	868	7135659556425601	15_puzzle_game.exe	aa52fc7fcbf87f3a
+0	195	7135681587350240	build.ninja	566cd213f7a9c83e
+3	1113	7135681598918021	CMakeFiles/15_puzzle_game.dir/main.cpp.obj	d37c046bb4b64579
+1113	1267	7135681600332126	15_puzzle_game.exe	aa52fc7fcbf87f3a

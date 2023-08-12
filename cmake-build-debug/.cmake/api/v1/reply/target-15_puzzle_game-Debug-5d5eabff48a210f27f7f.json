@@ -56,7 +56,8 @@
 			"sourceIndexes" : 
 			[
 				0,
-				3
+				3,
+				4
 			]
 		}
 	],
@@ -94,7 +95,8 @@
 			"sourceIndexes" : 
 			[
 				0,
-				3
+				3,
+				4
 			]
 		},
 		{
@@ -102,7 +104,8 @@
 			"sourceIndexes" : 
 			[
 				1,
-				2
+				2,
+				5
 			]
 		}
 	],
@@ -116,7 +119,7 @@
 		},
 		{
 			"backtrace" : 1,
-			"path" : "board/board.h",
+			"path" : "board/boa/board.h",
 			"sourceGroupIndex" : 1
 		},
 		{
@@ -129,6 +132,17 @@
 			"compileGroupIndex" : 0,
 			"path" : "board/tile/tile.cpp",
 			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "board/boa/board.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "info.h",
+			"sourceGroupIndex" : 1
 		}
 	],
 	"type" : "EXECUTABLE"

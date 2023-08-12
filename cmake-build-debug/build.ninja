@@ -55,12 +55,6 @@ build CMakeFiles/15_puzzle_game.dir/main.cpp.obj: CXX_COMPILER__15_puzzle_game_D
   OBJECT_DIR = CMakeFiles\15_puzzle_game.dir
   OBJECT_FILE_DIR = CMakeFiles\15_puzzle_game.dir
 
-build CMakeFiles/15_puzzle_game.dir/gameBoard/board/board.cpp.obj: CXX_COMPILER__15_puzzle_game_Debug E$:/Github-Repos/15-puzzle-game/gameBoard/board/board.cpp || cmake_object_order_depends_target_15_puzzle_game
-  DEP_FILE = CMakeFiles\15_puzzle_game.dir\gameBoard\board\board.cpp.obj.d
-  FLAGS = -g -std=gnu++20
-  OBJECT_DIR = CMakeFiles\15_puzzle_game.dir
-  OBJECT_FILE_DIR = CMakeFiles\15_puzzle_game.dir\gameBoard\board
-
 
 # =============================================================================
 # Link build statements for EXECUTABLE target 15_puzzle_game
@@ -69,7 +63,7 @@ build CMakeFiles/15_puzzle_game.dir/gameBoard/board/board.cpp.obj: CXX_COMPILER_
 #############################################
 # Link the executable 15_puzzle_game.exe
 
-build 15_puzzle_game.exe: CXX_EXECUTABLE_LINKER__15_puzzle_game_Debug CMakeFiles/15_puzzle_game.dir/main.cpp.obj CMakeFiles/15_puzzle_game.dir/gameBoard/board/board.cpp.obj
+build 15_puzzle_game.exe: CXX_EXECUTABLE_LINKER__15_puzzle_game_Debug CMakeFiles/15_puzzle_game.dir/main.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\15_puzzle_game.dir

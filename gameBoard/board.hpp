@@ -19,8 +19,12 @@ namespace GB {
     public:
 
         void shuffleTiles() {
-            // shuffling all the tiles inside the m_board
+            // shuffling all the rows inside the m_board
             std::shuffle(std::begin(m_board), std::end(m_board), rn);
+
+            for(int index{0}; index< SIZE; ++index)
+                // shuffling each member of rows
+                std::shuffle(std::begin(m_board[index]), std::end(m_board[index]), rn);
         }
 
         friend inline std::ostream& operator<<(std::ostream& out, Board& b);
@@ -38,7 +42,7 @@ namespace GB {
 
         for(int index_i{0}; index_i<SIZE; ++index_i) {
             for (int index_j{0}; index_j < SIZE; ++index_j){
-                out<<b.m_board[index_i][index_j]<<'  ';
+                out<<b.m_board[index_i][index_j]<<"  ";
             }
             out<<std::endl;
         }

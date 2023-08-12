@@ -104,6 +104,7 @@ namespace GB {
 
             std::swap(m_board[pointi.x()][pointi.y()],
                       m_board[m_index0.x()][m_index0.y()]);
+            setIndex0();
             return CheckMode::SUCCESS;
         }
 

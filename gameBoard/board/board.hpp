@@ -20,11 +20,12 @@ namespace GB {
         Board() = delete;
 
         void shuffleTiles() {
-
+            // shuffling all the tiles inside the m_board
+            std::shuffle(std::begin(m_board), std::end(m_board), rn);
         }
 
     private:
-        Tile board[SIZE][SIZE]{
+        Tile m_board[SIZE][SIZE]{
                 Tile{1}, Tile{2}, Tile{3}, Tile{4},
                 Tile{5}, Tile{6}, Tile{7}, Tile{8},
                 Tile{9}, Tile{10}, Tile{11}, Tile{12},

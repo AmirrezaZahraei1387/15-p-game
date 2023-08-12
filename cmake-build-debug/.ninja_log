@@ -1,16 +1,5 @@
 # ninja log v5
-1	193	7135650669398456	build.ninja	566cd213f7a9c83e
+1	189	7135662712707942	build.ninja	566cd213f7a9c83e
 6	78	7135646905694007	CMakeFiles/15_puzzle_game.dir/gameBoard/board/board.cpp.obj	81a4bcac705ccad1
-4	783	7135647005582526	CMakeFiles/15_puzzle_game.dir/main.cpp.obj	d37c046bb4b64579
-784	925	7135647006916562	15_puzzle_game.exe	7887b22aa72fbd20
-1	189	7135650669398456	build.ninja	566cd213f7a9c83e
-3	718	7135650677028951	CMakeFiles/15_puzzle_game.dir/main.cpp.obj	d37c046bb4b64579
-718	849	7135650678229327	15_puzzle_game.exe	aa52fc7fcbf87f3a
-4	802	7135650869810196	CMakeFiles/15_puzzle_game.dir/main.cpp.obj	d37c046bb4b64579
-803	931	7135650870983367	15_puzzle_game.exe	aa52fc7fcbf87f3a
-4	729	7135651195475319	CMakeFiles/15_puzzle_game.dir/main.cpp.obj	d37c046bb4b64579
-730	858	7135651196658752	15_puzzle_game.exe	aa52fc7fcbf87f3a
-4	867	7135651408700712	CMakeFiles/15_puzzle_game.dir/main.cpp.obj	d37c046bb4b64579
-867	995	7135651409889645	15_puzzle_game.exe	aa52fc7fcbf87f3a
-3	1041	7135653806657977	CMakeFiles/15_puzzle_game.dir/main.cpp.obj	d37c046bb4b64579
-1042	1235	7135653808440231	15_puzzle_game.exe	aa52fc7fcbf87f3a
+3	738	7135659555236154	CMakeFiles/15_puzzle_game.dir/main.cpp.obj	d37c046bb4b64579
+738	868	7135659556425601	15_puzzle_game.exe	aa52fc7fcbf87f3a

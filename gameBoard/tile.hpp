@@ -7,6 +7,7 @@
 #include <iostream>
 
 namespace GB {
+
     class Tile {
     public:
 

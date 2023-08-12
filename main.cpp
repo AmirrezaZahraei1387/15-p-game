@@ -5,6 +5,7 @@
 int main() {
     GB::Board board{};
     board.shuffleTiles();
+    board.prepare();
     std::cout<<board;
     return 0;
 }

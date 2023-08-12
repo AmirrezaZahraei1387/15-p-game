@@ -3,10 +3,13 @@
 //
 #ifndef INC_15_PUZZLE_GAME_BOARD_HPP
 #define INC_15_PUZZLE_GAME_BOARD_HPP
+
 #include "tile.hpp"
 #include <random>
 #include <algorithm>
 #include <iostream>
+#include <utility>
+
 
 namespace GB {
 
@@ -31,10 +34,20 @@ namespace GB {
             // the prepare function will move the index zero the top left corner
             for(int index_i{0}; index_i<SIZE; ++index_i) {
                 for (int index_j{0}; index_j < SIZE; ++index_j) {
-                    if(m_board[index_i][index_j] == 0)
+                    if(m_board[index_i][index_j] == 0) {
+                        std::swap(m_board[0][0], m_board[index_i][index_j]);
+                        break;
+                    }
                 }
             }
         }
+
+        void moveTile(){
+            // by giving a special index of tile we will
+            // use it to move a tile.
+
+        }
+
 
         friend inline std::ostream& operator<<(std::ostream& out, Board& b);
 

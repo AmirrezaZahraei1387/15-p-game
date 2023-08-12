@@ -4,12 +4,11 @@
 #ifndef INC_15_PUZZLE_GAME_BOARD_HPP
 #define INC_15_PUZZLE_GAME_BOARD_HPP
 
-#include "tile.hpp"
 #include <random>
 #include <algorithm>
 #include <iostream>
 #include <utility>
-
+#include "tile.hpp"
 
 namespace GB {
 
@@ -17,6 +16,40 @@ namespace GB {
     inline std::mt19937 rn{rd()};
 
     inline constexpr int SIZE{4};
+
+
+    class PointIndex {
+    public:
+
+        enum class CheckMode{
+            SUCCESS,
+            FAILURE
+        };
+
+        PointIndex(int x, int y):m_x{x}, m_y{y}{}
+
+        [[nodiscard]] CheckMode check()const{
+
+            auto checkV{
+
+                    [](int value)->bool
+                    {return value>= GB::SIZE || value < GB::SIZE;}
+            };
+
+            if(checkV(m_x) || checkV(m_y))
+                return CheckMode::FAILURE;
+            return CheckMode::SUCCESS;
+
+        }
+
+        [[nodiscard]] int x()const{return m_x;}
+        [[nodiscard]] int y()const{return m_y;}
+
+    private:
+        int m_x{};
+        int m_y{};
+    };
+
 
     class Board {
     public:
@@ -60,6 +93,8 @@ namespace GB {
         };
     };
 
+
+
     inline std::ostream &operator<<(std::ostream& out, Board& b) {
 
         for(int index_i{0}; index_i<SIZE; ++index_i) {
@@ -71,6 +106,8 @@ namespace GB {
 
         return out;
     }
+
+
 
 }
 #endif //INC_15_PUZZLE_GAME_BOARD_HPP

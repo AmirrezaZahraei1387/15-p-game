@@ -3,4 +3,4 @@ project(15_puzzle_game)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(15_puzzle_game main.cpp board/board.h board/tile.hpp)
+add_executable(15_puzzle_game main.cpp board/board.h board/tile/tile.hpp board/tile/tile.cpp)

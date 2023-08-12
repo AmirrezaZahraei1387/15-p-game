@@ -27,6 +27,15 @@ namespace GB {
                 std::shuffle(std::begin(m_board[index]), std::end(m_board[index]), rn);
         }
 
+        void prepare(){
+            // the prepare function will move the index zero the top left corner
+            for(int index_i{0}; index_i<SIZE; ++index_i) {
+                for (int index_j{0}; index_j < SIZE; ++index_j) {
+                    if(m_board[index_i][index_j] == 0)
+                }
+            }
+        }
+
         friend inline std::ostream& operator<<(std::ostream& out, Board& b);
 
     private:

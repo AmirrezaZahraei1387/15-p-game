@@ -1,8 +1,9 @@
 #include <iostream>
-
+#include "gameBoard/board.hpp"
 
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+    GB::Board board{};
+    board.shuffleTiles();
     return 0;
 }

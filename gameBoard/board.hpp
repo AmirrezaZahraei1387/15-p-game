@@ -6,6 +6,7 @@
 #include "tile.hpp"
 #include <random>
 #include <algorithm>
+#include <iostream>
 
 namespace GB {
 
@@ -17,12 +18,12 @@ namespace GB {
     class Board {
     public:
 
-        Board() = delete;
-
         void shuffleTiles() {
             // shuffling all the tiles inside the m_board
             std::shuffle(std::begin(m_board), std::end(m_board), rn);
         }
+
+        friend inline std::ostream& operator<<(std::ostream& out, Board& b);
 
     private:
         Tile m_board[SIZE][SIZE]{
@@ -32,5 +33,18 @@ namespace GB {
                 Tile{13}, Tile{14}, Tile{15}, Tile{0},
         };
     };
+
+    inline std::ostream &operator<<(std::ostream& out, Board& b) {
+
+        for(int index_i{0}; index_i<SIZE; ++index_i) {
+            for (int index_j{0}; index_j < SIZE; ++index_j){
+                out<<b.m_board[index_i][index_j]<<'  ';
+            }
+            out<<std::endl;
+        }
+
+        return out;
+    }
+
 }
 #endif //INC_15_PUZZLE_GAME_BOARD_HPP

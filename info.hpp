@@ -1,8 +1,8 @@
 //
 // Created by KAVOSH on 8/12/2023.
 //
-#ifndef INC_15_PUZZLE_GAME_INFO_H
-#define INC_15_PUZZLE_GAME_INFO_H
+#ifndef INC_15_PUZZLE_GAME_INFO_HPP
+#define INC_15_PUZZLE_GAME_INFO_HPP
 namespace info{
     inline constexpr int SIZE{4};
 
@@ -11,4 +11,4 @@ namespace info{
         FAILURE
     };
 }
-#endif //INC_15_PUZZLE_GAME_INFO_H
+#endif //INC_15_PUZZLE_GAME_INFO_HPP

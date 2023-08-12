@@ -6,21 +6,23 @@
 #define INC_15_PUZZLE_GAME_TILE_HPP
 #include <iostream>
 
+namespace GB {
+    class Tile {
+    public:
 
-class Tile{
-public:
+        explicit Tile(int value) : m_tileValue{value} {}
 
-    Tile() = default;
-    [[nodiscard]] int tile()const{return m_tileValue;}
-    friend inline std::ostream& operator<<(std::ostream& out, Tile& t);
-    
-private:
-    int m_tileValue{};
-};
+        [[nodiscard]] int tile() const { return m_tileValue; }
 
-inline std::ostream &operator<<(std::ostream &out, Tile &t) {
-    out<<t.m_tileValue;
-    return out;
+        friend inline std::ostream &operator<<(std::ostream &out, Tile &t);
+
+    private:
+        int m_tileValue{};
+    };
+
+    inline std::ostream &operator<<(std::ostream &out, Tile &t) {
+        out << t.m_tileValue;
+        return out;
+    }
 }
-
 #endif //INC_15_PUZZLE_GAME_TILE_HPP

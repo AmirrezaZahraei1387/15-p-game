@@ -3,6 +3,13 @@
 
 int main() {
     UIN::GetIn g{};
-    g.getInput();
+    GB::Board b{};
+
+    b.shuffle();
+    std::cout<<b<<std::endl;
+
+    if(b.moveTile(g.getInput()) == info::ModeHap::FAILURE)
+        std::cout<<"f";
+    std::cout<<b;
     return 0;
 }

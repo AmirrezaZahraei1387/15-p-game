@@ -4,6 +4,7 @@
 #ifndef INC_15_PUZZLE_GAME_BOARD_HPP
 #define INC_15_PUZZLE_GAME_BOARD_HPP
 
+#include "../../userInput/userin.h"
 #include "../../info.hpp"
 #include "../tile/tile.hpp"
 #include <iostream>
@@ -22,7 +23,9 @@ namespace GB{
         };
 
         void shuffle();
+        info::ModeHap moveTile(UIN::GetIn::Input input);
         friend std::ostream& operator<<(std::ostream& out, Board& board);
+
 
     private:
 
@@ -31,10 +34,12 @@ namespace GB{
         // setIndex0 is created. it will do a complete search in the board and so it is expensive.
         // So in the cases that we can define the index0 we do without this function.
         void setIndex0S();
-
         // the game says that the spot must be in the top left corner
         // to prepare will move the spot (index 0) to this situation.
         void prepare();
+
+        info::ModeHap move(Point& p);
+
         Point m_index0{info::SIZE -1, info::SIZE -1};
 
 
@@ -45,5 +50,7 @@ namespace GB{
         Tile{13}, Tile{14}, Tile{15}, Tile{0},
         };
     };
+
+    info::ModeHap checkIndex(Board::Point& p);
 }
 #endif //INC_15_PUZZLE_GAME_BOARD_HPP

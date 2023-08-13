@@ -8,13 +8,26 @@
 #include "../tile/tile.hpp"
 #include <iostream>
 
+
 namespace GB{
 
     class Board{
     public:
+
+        struct Point{
+            int x;
+            int y;
+        };
+
+
+        void shuffle();
         friend std::ostream& operator<<(std::ostream& out, Board& board);
 
+
+
     private:
+        Point m_index0{info::SIZE -1, info::SIZE -1};
+
         Tile m_board[info::SIZE][info::SIZE]{
         Tile{1}, Tile{2}, Tile{3}, Tile{4},
         Tile{5}, Tile{6}, Tile{7}, Tile{8},

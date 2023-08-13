@@ -12,7 +12,7 @@ namespace GB{
     class Tile{
     public:
         explicit Tile(int value):m_value{value}{}
-        Tile& operator= (Tile& t);
+        Tile& operator= (const Tile& t);
 
         friend bool operator== (Tile& t, int n);
         friend std::ostream& operator<<(std::ostream& out, Tile& t);

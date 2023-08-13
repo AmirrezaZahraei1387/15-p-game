@@ -119,7 +119,7 @@
 		},
 		{
 			"backtrace" : 1,
-			"path" : "board/boa/board.h",
+			"path" : "board/boa/board.hpp",
 			"sourceGroupIndex" : 1
 		},
 		{
@@ -141,7 +141,7 @@
 		},
 		{
 			"backtrace" : 1,
-			"path" : "info.h",
+			"path" : "info.hpp",
 			"sourceGroupIndex" : 1
 		}
 	],

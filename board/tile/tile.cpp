@@ -6,7 +6,7 @@
 #include <iostream>
 
 namespace GB {
-    Tile& Tile::operator=(Tile &t) {
+    Tile& Tile::operator=(const Tile &t) {
 
         if (&t != this)
             m_value = t.m_value;

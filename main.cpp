@@ -1,8 +1,11 @@
-#include "board/tile/tile.hpp"
+#include "board/boa/board.hpp"
 
 
 int main() {
 
-    GB::Tile t{5};
+    GB::Board b{};
+
+    std::cout<<b;
+
     return 0;
 }

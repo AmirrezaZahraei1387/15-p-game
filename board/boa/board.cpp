@@ -114,6 +114,23 @@ namespace GB {
         return info::ModeHap::FAILURE;
     }
 
+    info::ModeHap checkWin(Board &board) {
+
+        int counter{-1};
+
+        for(int i{info::SIZE - 1}; i >= 0; --i){
+            for(int j{info::SIZE - 1}; j >= 0; --j){
+
+                counter += 1;
+
+                if(board.m_board[i][j] != counter)
+                    return info::ModeHap::FAILURE;
+            }
+        }
+
+        return info::ModeHap::SUCCESS;
+    }
+
     info::ModeHap checkIndex(Board::Point &p){
 
         if (p.x >= info::SIZE || p.x < 0)

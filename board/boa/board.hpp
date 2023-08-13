@@ -25,7 +25,7 @@ namespace GB{
         void shuffle();
         info::ModeHap moveTile(UIN::GetIn::Input input);
         friend std::ostream& operator<<(std::ostream& out, Board& board);
-
+        friend info::ModeHap checkWin(Board& board);
 
     private:
 
@@ -37,7 +37,6 @@ namespace GB{
         // the game says that the spot must be in the top left corner
         // to prepare will move the spot (index 0) to this situation.
         void prepare();
-
         info::ModeHap move(Point& p);
 
         Point m_index0{info::SIZE -1, info::SIZE -1};

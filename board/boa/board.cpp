@@ -72,14 +72,14 @@ namespace GB {
             case UIN::GetIn::Input::D_ST_RIGHT:
 
                 newIndex.x = m_index0.x;
-                newIndex.y = m_index0.y+1;
+                newIndex.y = m_index0.y-1;
 
                 return move(newIndex);
 
             case UIN::GetIn::Input::A_ST_LEFT:
 
                 newIndex.x = m_index0.x;
-                newIndex.y = m_index0.y-1;
+                newIndex.y = m_index0.y+1;
 
                 return move(newIndex);
 
@@ -97,6 +97,7 @@ namespace GB {
             case UIN::GetIn::Input::ND:
                 assert ("the not defined should be handled by caller");
         }
+
     }
 
     info::ModeHap Board::move(Board::Point &p) {

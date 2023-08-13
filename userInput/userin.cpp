@@ -21,14 +21,13 @@ namespace UIN {
 
          char input{};
          Input result{};
-
          while(true){
              std::cout<<"please enter your command?(w, a, s, d, q):";
              std::cin>>input;
              result = checkInput(input);
 
              if(result != Input::ND)
-                 return result;
+                 break;
 
 
              std::cin.clear();
@@ -37,6 +36,10 @@ namespace UIN {
 
              }
          incMoveNum1();
+         std::cout<<std::endl;
+         std::cout<<"you have enter "<<m_moveNumber<<" move numbers until now."<<std::endl;
+         std::cout<<std::endl;
+        return result;
      }
 
 

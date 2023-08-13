@@ -15,6 +15,7 @@ namespace GB{
         Tile& operator= (const Tile& t);
 
         friend bool operator== (Tile& t, int n);
+        friend bool operator!= (Tile& t, int n);
         friend std::ostream& operator<<(std::ostream& out, Tile& t);
 
     private:

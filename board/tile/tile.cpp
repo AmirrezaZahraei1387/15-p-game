@@ -23,4 +23,8 @@ namespace GB {
     bool operator==(Tile &t, int n) {
         return t.m_value == n;
     }
+
+    bool operator!=(Tile &t, int n) {
+        return t.m_value != n;
+    }
 }

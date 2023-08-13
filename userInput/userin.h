@@ -31,13 +31,12 @@ namespace UIN{
             Q_QUIT_GAME,
             ND,
         };
-        [[nodiscard]] Input checkInput(char input) const;
-        Input getInput();
+        [[nodiscard]] static Input checkInput(char input);
+        [[nodiscard]] Input getInput() const;
         [[nodiscard]] int getMoveNum()const;
-
-    private:
         void incMoveNum1();
 
+    private:
         int m_moveNumber{0};
     };
 }

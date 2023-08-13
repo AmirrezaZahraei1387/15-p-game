@@ -116,12 +116,16 @@ namespace GB {
 
     info::ModeHap checkWin(Board &board) {
 
-        int counter{-1};
+        int counter{0};
 
-        for(int i{info::SIZE - 1}; i >= 0; --i){
-            for(int j{info::SIZE - 1}; j >= 0; --j){
+        for(int i{0}; i < info::SIZE; ++i){
+            for(int j{0}; j < info::SIZE; ++j){
 
                 counter += 1;
+
+                // because this is the spot so it is 0
+                if(i == info::SIZE -1 && j == info::SIZE -1)
+                    break;
 
                 if(board.m_board[i][j] != counter)
                     return info::ModeHap::FAILURE;

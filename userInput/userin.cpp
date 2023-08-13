@@ -6,18 +6,18 @@
 
 namespace UIN {
 
-     GetIn::Input GetIn::checkInput(char input) const{
+     GetIn::Input GetIn::checkInput(char input) {
         switch (input){
-            case 'w': return GetIn::Input::W_ST_UP;break;
-            case 'a': return GetIn::Input::A_ST_LEFT;break;
-            case 's': return GetIn::Input::S_ST_DOWN;break;
-            case 'd': return GetIn::Input::D_ST_RIGHT;break;
-            case 'q': return GetIn::Input::Q_QUIT_GAME;break;
-            default: return GetIn::Input::ND;break;
+            case 'w': return GetIn::Input::W_ST_UP;
+            case 'a': return GetIn::Input::A_ST_LEFT;
+            case 's': return GetIn::Input::S_ST_DOWN;
+            case 'd': return GetIn::Input::D_ST_RIGHT;
+            case 'q': return GetIn::Input::Q_QUIT_GAME;
+            default: return GetIn::Input::ND;
         }
     }
 
-    GetIn::Input GetIn::getInput() {
+    GetIn::Input GetIn::getInput() const {
 
          char input{};
          Input result{};
@@ -35,7 +35,6 @@ namespace UIN {
              std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 
              }
-         incMoveNum1();
          std::cout<<std::endl;
          std::cout<<"you have enter "<<m_moveNumber<<" move numbers until now."<<std::endl;
          std::cout<<std::endl;

@@ -1,11 +1,8 @@
 #include "board/boa/board.hpp"
-
+#include "userInput/userin.h"
 
 int main() {
-
-    GB::Board b{};
-    b.shuffle();
-    std::cout<<b;
-
+    UIN::GetIn g{};
+    g.getInput();
     return 0;
 }

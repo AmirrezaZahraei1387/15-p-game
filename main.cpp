@@ -34,7 +34,7 @@ int main() {
         if (result == info::ModeHap::FAILURE) {
             std::cout << "bad move command. it can't be done!!!" << std::endl;
         } else {
-            std::cout << "awsome";
+            std::cout << "awsome"<<std::endl;
             getIn.incMoveNum1();
         }
 
@@ -43,6 +43,9 @@ int main() {
             std::cout<<"you done it. you won"<<std::endl;
             break;
         }
+
+        std::cout<<"the board is now something like this:"<<std::endl;
+        std::cout<<board;
 
     }
 

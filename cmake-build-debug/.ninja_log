@@ -87,3 +87,9 @@
 23	800	7136556612961697	CMakeFiles/15_puzzle_game.dir/userInput/userin.cpp.obj	2ab8d6a363748be6
 3	1193	7136556616932814	CMakeFiles/15_puzzle_game.dir/board/boa/board.cpp.obj	742ee44c5887440d
 1194	1323	7136556618133986	15_puzzle_game.exe	3c7c90b866d7f484
+4	426	7136557826640425	CMakeFiles/15_puzzle_game.dir/main.cpp.obj	d37c046bb4b64579
+426	552	7136557827799126	15_puzzle_game.exe	3c7c90b866d7f484
+4	468	7136558987558356	CMakeFiles/15_puzzle_game.dir/main.cpp.obj	d37c046bb4b64579
+468	604	7136558988797627	15_puzzle_game.exe	3c7c90b866d7f484
+4	443	7136559291970882	CMakeFiles/15_puzzle_game.dir/main.cpp.obj	d37c046bb4b64579
+444	579	7136559293207805	15_puzzle_game.exe	3c7c90b866d7f484
